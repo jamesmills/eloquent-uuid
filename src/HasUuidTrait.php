@@ -10,7 +10,7 @@ trait HasUuidTrait
     {
         static::creating(function ($model) {
 
-            if (!\Schema::hasColumn($model->getTable(), 'uuid')) {
+            if (!\Schema::connection($model->getConnectionName())->hasColumn($model->getTable(), 'uuid')) {
                 throw new MissingUuidColumnException("Looks like you don't have a uuid column on " . $model->getTable() . " table. Please check your schema.");
             }
 
