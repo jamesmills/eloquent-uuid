@@ -100,6 +100,27 @@ Route::delete('/users', function(Request $request) {
 });
 ```
 
+If your column is named different from the default `uuid` you can overwrite the `getUuidColumnName()` function to provide your 
+own name.
+```php
+<?php
+namespace App\Models;
+
+use JamesMills\Uuid\HasUuidTrait;
+use Illuminate\Database\Eloquent\Model;
+
+class MyModel extends Model
+{
+    use HasUuidTrait;
+
+    protected static function getUuidColumnName()
+    {
+        return 'id';
+    }
+}
+
+```
+
 ## Treeware
 
 You're free to use this package, but if it makes it to your production environment you are required to buy the world a tree.
