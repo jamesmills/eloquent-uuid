@@ -3,6 +3,7 @@
 [![Packagist](https://img.shields.io/packagist/v/jamesmills/eloquent-uuid.svg?style=for-the-badge)](https://packagist.org/packages/jamesmills/eloquent-uuid)
 ![Packagist](https://img.shields.io/packagist/dt/jamesmills/eloquent-uuid.svg?style=for-the-badge)
 ![Packagist](https://img.shields.io/packagist/l/jamesmills/eloquent-uuid?style=for-the-badge)
+[![Buy us a tree](https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen?style=for-the-badge)](https://plant.treeware.earth/jamesmills/eloquent-uuid)
 
 A Laravel Eloquent Model trait for adding and using a uuid with models.
 
@@ -98,3 +99,9 @@ Route::delete('/users', function(Request $request) {
     $users->delete();
 });
 ```
+
+## Licence
+
+This package is 100% free and open-source, under the MIT license. Use it however you want.
+
+This package is [Treeware](https://treeware.earth). If you use it in production, then we ask that you [**buy the world a tree**](https://plant.treeware.earth/jamesmills/eloquent-uuid) to thank us for our work. By contributing to the Treeware forest you’ll be creating employment for local families and restoring wildlife habitats.
